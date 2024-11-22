@@ -1,13 +1,16 @@
 import React from 'react'
-import Container from './Container'
+import MenuLi from './MenuLi'
 
 const Navbar = () => {
   return (
-    <div>
-      <Container>
-        Navbar
-      </Container>
-    </div>
+    <ul className="menu mt-[118px] flex flex-col gap-y-[30px]">
+      <MenuLi litext='Dashboard' />
+      <MenuLi highlight='opacity-1' litext='Expenses' to='/expenses'/>
+      <MenuLi litext='Wallets' to='/wallets'/>
+      <MenuLi litext='Summary' />
+      <MenuLi litext='Accounts' />
+      <MenuLi litext='Settings' />
+    </ul>
   )
 }
 
