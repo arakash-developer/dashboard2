@@ -9,7 +9,7 @@ import Root from './component/layers/Root.jsx'
 import About from './component/pages/About'
 import Expenses from './component/pages/Expenses';
 import Error from './component/pages/Error';
-import React from 'react'
+import React, { lazy, useEffect, useLayoutEffect, useState } from 'react'
 import Container from './component/layers/Container'
 import Profile from '../public/Profile.jpg'
 import MenuLi from './component/layers/MenuLi'
@@ -29,7 +29,17 @@ import { MdFastfood } from "react-icons/md";
 import { MdSlowMotionVideo } from "react-icons/md";
 import Progress from './component/layers/Progress'
 import Navbar from "./component/layers/Navbar";
+import PulseLoader from "react-spinners/PulseLoader";
 
+
+// const wait = (time)=>{
+//   return new Promise((resolve) =>{
+//     setTimeout(() => {
+//       resolve()
+//     }, time);
+//   })
+// }
+// let Expenses = lazy(()=> wait(800).then(()=> import('./component/pages/Expenses')))
 
 
 const router = createBrowserRouter(
@@ -44,8 +54,13 @@ const router = createBrowserRouter(
 );
 
 
-
 const App = () => {
+  let [loading, setLoading] = useState(true);
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 700);
+  },[])
   return (
     <div>
       <Container className='h-screen py-10'>
@@ -64,9 +79,14 @@ const App = () => {
             <Navbar />
           </div>
           <div className="my w-[1060px] rounded-[30px] overflow-hidden bg-[#FFFFFF]">
-            <RouterProvider router={router} />
+            {
+              loading ?
+                <div className="w-full h-full bg-[#fff] flex justify-center items-center">
+                  <PulseLoader speedMultiplier={1.5} color="#101010" />
+                </div> :
+                <RouterProvider router={router} />
+            }
           </div>
-
         </div>
       </Container>
     </div>

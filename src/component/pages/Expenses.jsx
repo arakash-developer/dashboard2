@@ -37,12 +37,14 @@ const Expenses = () => {
                 <div className="w-[31px] h-[31px] rounded-full overflow-hidden absolute left-[25px] top-0 border-[3px] border-[#fff] box-content z-40">
                   <img className='w-full h-full object-cover' src={Boy} alt={Boy} />
                 </div>
-                <div className="w-[31px] h-[31px] rounded-full overflow-hidden absolute left-[50px] top-0">
+                <div className="w-[31px] h-[31px] rounded-full overflow-hidden absolute left-[50px] top-0 border-[3px] border-[#fff] box-content ">
                   <img className='w-full h-full object-cover' src={Girl} alt={Girl} />
                 </div>
               </div>
-              <div className="rounded-full w-[28px] h-[28px] border-[3px] border-[#d2dce8] flex justify-center items-center">
-                <FaPlus className='text-[#d2dce8] inline-block' />
+              <div className="border-[3px] border-[#fff] box-content ">
+                <div className="rounded-full w-[28px] h-[28px] border-[3px] border-[#d2dce8]  flex justify-center items-center">
+                  <FaPlus className='text-[#d2dce8] inline-block' />
+                </div>
               </div>
             </div>
           </div>
