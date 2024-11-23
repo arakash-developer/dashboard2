@@ -4,7 +4,6 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import './App.css'
 import Root from './component/layers/Root.jsx'
 import About from './component/pages/About'
 import Expenses from './component/pages/Expenses';

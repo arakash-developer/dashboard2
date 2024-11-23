@@ -1,0 +1,7 @@
+
+.menu li a{
+    opacity: 0.5;
+}
+.menu li a.active{
+    opacity: 1;
+}

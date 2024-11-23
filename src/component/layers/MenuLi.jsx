@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 
 
 
-const MenuLi = ({to,className,litext,highlight}) => {
+const MenuLi = ({to,className,litext}) => {
   return (
     <>
-    <li className={`font-semibold list-none text-[25px] leading-[159%] text-[#fff] ${highlight?highlight:"opacity-50"}`}><NavLink to={to}>{litext}</NavLink></li>
+    <li className={`font-semibold list-none text-[25px] leading-[159%] text-[#fff]`}><NavLink to={to}>{litext}</NavLink></li>
     </>
   )
 }
