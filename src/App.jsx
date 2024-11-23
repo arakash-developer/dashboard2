@@ -9,6 +9,7 @@ import About from './component/pages/About'
 import Expenses from './component/pages/Expenses';
 import Error from './component/layers/Error';
 import React, { lazy, useEffect, useLayoutEffect, useState } from 'react'
+import Dashboard from "./component/pages/Dashboard.jsx";
 
 
 // const wait = (time)=>{
@@ -24,7 +25,7 @@ import React, { lazy, useEffect, useLayoutEffect, useState } from 'react'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
-      <Route path='/' element={<Expenses />} />
+      <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/expenses' element={<Expenses />}></Route>
       <Route path='/about' element={<About />}></Route>
       <Route path='*' element={<Error />} />
