@@ -17,6 +17,7 @@ import { TiHome } from "react-icons/ti";
 import { MdFastfood } from "react-icons/md";
 import { MdSlowMotionVideo } from "react-icons/md";
 import Progress from '../layers/Progress'
+import Chart from '../layers/Chart'
 
 
 const Expenses = () => {
@@ -48,8 +49,9 @@ const Expenses = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-[46px]">
-            <img src={Stats} alt={Stats} />
+          <div className="mt-[46px] w-[510px] h-[150px]">
+            {/* <img src={Stats} alt={Stats} /> */}
+            <Chart />
           </div>
           <div className="mt-[47px]">
             <div className="flex justify-between items-center border-b-2 border-[#dedede] pb-2">

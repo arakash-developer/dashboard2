@@ -5,3 +5,14 @@
 .menu li a.active{
     opacity: 1;
 }
+.MuiChartsAxis-root{
+    display: none;
+}
+.MuiBarElement-root {
+    fill: #157AFF !important;
+    opacity: 0.2 !important;
+}
+.MuiBarElement-root:hover{
+    fill: #157AFF !important;
+    opacity: 1 !important;
+}
