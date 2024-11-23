@@ -8,26 +8,10 @@ import './App.css'
 import Root from './component/layers/Root.jsx'
 import About from './component/pages/About'
 import Expenses from './component/pages/Expenses';
-import Error from './component/pages/Error';
+import Error from './component/layers/Error';
 import React, { lazy, useEffect, useLayoutEffect, useState } from 'react'
 import Container from './component/layers/Container'
 import Profile from '../public/Profile.jpg'
-import MenuLi from './component/layers/MenuLi'
-import Girl from '../public/girl.jpg'
-import Girl2 from '../public/girl2.jpg'
-import Boy from '../public/men.jpg'
-import Illustration from '../public/Illustration.png'
-import Illustration2 from '../public/Illustration2.png'
-import Stats from '../public/Stats.png'
-import { FaPlus } from "react-icons/fa";
-import ItemCart from './component/layers/ItemCart'
-import { HiDotsHorizontal } from "react-icons/hi";
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { FaBus } from "react-icons/fa";
-import { TiHome } from "react-icons/ti";
-import { MdFastfood } from "react-icons/md";
-import { MdSlowMotionVideo } from "react-icons/md";
-import Progress from './component/layers/Progress'
 import Navbar from "./component/layers/Navbar";
 import PulseLoader from "react-spinners/PulseLoader";
 
@@ -59,7 +43,7 @@ const App = () => {
   useLayoutEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 700);
+    }, 1000);
   },[])
   return (
     <div>
