@@ -23,7 +23,7 @@ import Chart from '../layers/Chart'
 const Expenses = () => {
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-start h-full">
         <div className="left py-[60px] px-[100px]">
           <div className="flex justify-between items-start">
             <div className="">
@@ -75,7 +75,7 @@ const Expenses = () => {
             <ItemCart h3='Entertainment' p='5:12 pm  •  Nonton Bioskop' bg='bg-[#4BA83D]' money='-35.200' icon={<MdSlowMotionVideo className='text-[22px] inline-block' />} />
           </div>
         </div>
-        <div className="right w-[350px] bg-[#F9FAFC] pt-[76px] pb-[60px] px-[50px]">
+        <div className="right w-[350px] bg-[#F9FAFC] h-full pt-[76px] pb-[60px] px-[50px]">
           <h2 className='font-normal text-xl leading-[150%] text-[#262a41]'>Where your money go?</h2>
           <div className="progress mt-[30px] flex flex-col gap-y-[30px]">
             <Progress title='Food and Drinks' money='872.400' w='w-[70px]' />

@@ -1,5 +1,6 @@
 *{
     font-family: "Poppins", serif;
+    box-sizing: border-box;
 }
 .menu li a{
     opacity: 0.5;
