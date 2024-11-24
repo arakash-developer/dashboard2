@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
-  },
-  plugins: [],
+    fontFamily: {
+      'poppins': ['Poppins', 'serif']
+    },
+    plugins: [],
+  }
 }

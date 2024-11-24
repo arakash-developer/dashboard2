@@ -5,7 +5,9 @@ const Dashboard = () => {
     return (
         <div className='w-full h-full flex justify-center items-center'>
             <h1>Dashboard</h1>
-            <Chart />
+            <div className="w-[810px] h-[300px]">
+               <Chart />
+            </div>
         </div>
     )
 }

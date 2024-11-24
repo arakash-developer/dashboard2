@@ -49,7 +49,7 @@ const Expenses = () => {
               </div>
             </div>
           </div>
-          <div className="mt-[46px] w-[510px] h-[150px]">
+          <div className="mt-[46px] w-[510px] h-[60px]">
             {/* <img src={Stats} alt={Stats} /> */}
             <Chart />
           </div>
