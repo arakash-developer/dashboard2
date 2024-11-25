@@ -24,7 +24,7 @@ const Expenses = () => {
   return (
     <>
       <div className="flex justify-between items-start h-full">
-        <div className="left py-[60px] px-[100px]">
+        <div className="left py-[60px] px-[80px]">
           <div className="flex justify-between items-start">
             <div className="">
               <h1 className='font-semibold text-[2.50rem] leading-[32px] text-[#262a41]'>Expenses</h1>
