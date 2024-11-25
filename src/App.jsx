@@ -7,7 +7,7 @@ import {
 import Root from './component/layers/Root.jsx'
 import About from './component/pages/About'
 import Expenses from './component/pages/Expenses';
-import Error from './component/layers/Error';
+import Error from './component/pages/Error';
 import React, { lazy, useEffect, useLayoutEffect, useState } from 'react'
 import Dashboard from "./component/pages/Dashboard.jsx";
 
